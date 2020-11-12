@@ -3,8 +3,6 @@ variable "ibmcloud_timeout" {
   default     = 900
 }
 
-variable "resource_group_name" {}
-
 variable "vpc_name" {}
 
 variable "basename" {
