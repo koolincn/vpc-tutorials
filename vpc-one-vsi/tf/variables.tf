@@ -1,5 +1,3 @@
-variable "ibmcloud_api_key" {}
-
 variable "ibmcloud_timeout" {
   description = "Timeout for API operations in seconds."
   default     = 900
@@ -23,6 +21,6 @@ variable "subnet_zone" {
 
 variable "ssh_keyname" {}
 
-variable "instance_count" {
+variable instance_count {
   default = 1
 }
