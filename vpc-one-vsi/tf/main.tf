@@ -115,6 +115,7 @@ resource "ibm_is_subnet" "subnet" {
   vpc             = ibm_is_vpc.vpc.id
   zone            = var.subnet_zone
   resource_group  = data.ibm_resource_group.group.id
+  public_gateway  = ibm_is_public_gateway.cloud.id
   ipv4_cidr_block = ibm_is_vpc_address_prefix.vpc_address_prefix.cidr
 }
 
