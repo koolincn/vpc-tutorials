@@ -16,7 +16,7 @@ resource "ibm_is_vpc" "vpc" {
 }
 
 resource "ibm_is_security_group" "sg1" {
-  name = "${local.BASENAME}-sg1"
+  name = "${var.basename}-sg1"
   vpc  = ibm_is_vpc.vpc.id
 }
 
